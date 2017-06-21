@@ -40,3 +40,12 @@ pagehelper:
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql
+
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 604800
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
